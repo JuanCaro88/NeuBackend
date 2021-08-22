@@ -8,8 +8,8 @@ class Countrie(models.Model):
 
     ''' Columns '''
     name_countrie = models.CharField('Name', max_length=60)
-    city = models.CharField('Cities', max_length=60)
     state = models.CharField('State', max_length=60)
+    city = models.CharField('Cities', max_length=60)
     population = models.IntegerField('Population')
 
 

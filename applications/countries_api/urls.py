@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import CountriesView, CountriesFiltersCity
+from .views import CountriesView, CountriesFiltersState, CountriesFiltersCity
 
 urlpatterns = [
     path('countrie/', CountriesView.as_view()),
     path('countrie-city/', CountriesFiltersCity.as_view()),
-
+    path('countrie-state/', CountriesFiltersState.as_view())
 ]
